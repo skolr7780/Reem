@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<audio controls>
+		<source src="hb.mp3" type="audio/mp3">
+		
+
+	</audio>
+	<title>i love u Reem</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden_dev.js"></script>
+    <script type="text/javascript" src="js/functions_dev.js"></script>
+	
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">/**</span><br />
+				<span class="space"/><span class="comments">*   ريم  ‏كل عام وانتي بخير </span><br />
+				<span class="space"/><span class="comments">*  </span><br />
+				<span class="space"/><span class="comments">*/</span><br />
+				 القمر = <span class="keyword">الجديد</span> (<span class="string">"ريم"</span>);<br />
+				<span class="comments">،‏أحلى سنه هي السنه الي انولدتي  فيها</span><br />
+				كل عَام = <span class="keyword">وانتِ</span>  معِي ي جميلتِي();<br />
+				تواجد = <span class="keyword">قمرنا</span>  الجديد هو(<span class="string">"1999*/* "</span>);<br />
+				،أبوس اليُوم  واللحظه  اللي عِرفتك فيها;<br />
+				،‏شقَد هاليُوم جمِيل( دامَك إنولدتِ فِيه.(<span class="string">"1999 */*"</span>) ){</br>
+					وللمعلُوميه؟ذي الهديه توصف حبي لك ;</br>
+				}</br>
+				<span class="comments">//  كل عام وإنتِ ياوجه الحياة والطفهُم</span><br />
+				<span class="keyword">سنه</span> مميزه (){<br />
+				@1999 </br>
+				<span class="comments">// - إنتِ كلششي ححلو بالححياة 💛</span><br />
+				1-</br>
+				<span class="comments">// -كلعام وأنتِ مححليهه الدنيا 💛</span><br />
+				2-</br>
+				<span class="comments">// - كل عام وإنتِ عمري.💛</span><br />
+				3-</br>
+			    <span class="comments">// - كل عام وإنتِ كوني.💛</span><br />
+				4-</br>
+				<span class="comments">// - كل عام وإنتِ كلشي حلو بحياتي.💛</span><br />
+				(<span class="string">""</span>);
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+					</br>
+					</br>
+					</br>
+					</br>
+						أجمل أنسانه على وجه الارض
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						الله يحفظك لي <br/>
+						<div class="signature"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="copyright">
+			Made with love from <a href="">3z</a> i love u Reem.<br />
+
+		</div>
+	</div>
+	<script type="text/javascript">
+
+		var together = new Date();
+	
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "متصفحك لايدعم"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+</html>
